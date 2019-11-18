@@ -9,30 +9,30 @@ html {
 }
 
 .bfContainer {
-  padding: 20px;
-  height: 200px;
+  padding: 5px 20px;
+  height: 220px;
   background: black;
   font-family: "Montserrat", sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
 
 h1 {
   color: #00b5de;
   font-weight: 700;
-  width: 50%;
-  margin: 0;
-  margin-left: 10px;
+  font-size: 32px;
 }
 
-.timer {
-  width: 50% !important;
-  margin: 0 !important;
+.container {
+  margin: 0 auto;
+}
+
+.flip-clock-wrapper {
+  display: inline-block;
+  width: auto !important;
 }
 
 .flip-clock-label {
   color: white !important;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300; 
+  font-weight: 300;
 }
