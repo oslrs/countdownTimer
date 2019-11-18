@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 125%;
+}
+
+.bfContainer {
+  padding: 2rem;
+  width: 30rem;
+  height: 30rem;
+  background: black;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #00b5de;
+  font-weight: 700;
+}
+
+h1 span {
+  display: block;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+}
+
+.flip-clock-label {
+  color: white !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300; 
+}
