@@ -10,8 +10,8 @@ html {
 
 .bfContainer {
   padding: 2rem;
-  width: 30rem;
-  height: 30rem;
+  width: 100%;
+  height: 100%;
   background: black;
   font-family: "Montserrat", sans-serif;
   display: flex;
