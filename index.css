@@ -11,7 +11,7 @@ html {
 .bfContainer {
   padding: 5px 20px;
   height: 220px;
-  background: black;
+  background: #231f20;
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
@@ -20,6 +20,7 @@ h1 {
   color: #00b5de;
   font-weight: 700;
   font-size: 32px;
+  margin-top: 10px;
 }
 
 .container {
