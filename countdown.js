@@ -4,5 +4,6 @@ const diff = then.diff(now, "seconds");;
 
 const clock = $(".timer").FlipClock(diff, {
   countdown: true,
-  clockFace: "DailyCounter"
+  clockFace: "DailyCounter",
+  language: $(".frTag").length ? "fr-ca" : "en-us"
 });
