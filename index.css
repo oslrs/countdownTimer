@@ -10,17 +10,26 @@ html {
 
 .bfContainer {
   padding: 5px 20px;
-  height: 220px;
-  background: #231f20;
+  height: 200px;
+  /* Adds black overlay over image */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url("snowflakeBg.jpg");
+  background-size: cover;
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
 h1 {
   color: #00b5de;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 32px;
-  margin-top: 10px;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+h1 span {
+  color: white;
 }
 
 .container {
@@ -30,6 +39,7 @@ h1 {
 .flip-clock-wrapper {
   display: inline-block;
   width: auto !important;
+  transform: scale(0.8);
 }
 
 .flip-clock-label {
