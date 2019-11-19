@@ -13,7 +13,7 @@ html {
   height: 200px;
   /* Adds black overlay over image */
   background:
-    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
     url("snowflakeBg.jpg");
   background-size: cover;
   font-family: "Montserrat", sans-serif;
