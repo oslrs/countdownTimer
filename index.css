@@ -8,6 +8,10 @@ html {
   font-size: 20px;
 }
 
+body {
+  margin: 0;
+}
+
 .bfContainer {
   padding: 5px 20px;
   height: 200px;
