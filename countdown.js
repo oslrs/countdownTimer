@@ -6,16 +6,25 @@ const params = new URLSearchParams(url.search)
 const title = params.get('title')
 const date = params.get('date')
 
-// 4. Set 
-const titleSpan = document.querySelector('.title')
-titleSpan.textContent = title
-
+// 4. Calculate time difference in seconds
 const then = moment(new Date(date))
 const now = moment.now()
 const diff = then.diff(now, 'seconds')
+console.log(diff)
 
-const clock = $('.timer').FlipClock(diff, {
-  countdown: true,
-  clockFace: 'DailyCounter',
-  language: $('.frTag').length ? 'fr-ca' : 'en-us'
-})
+// Generic message in case timer runs out
+if (diff < 0) {
+  const titleSpan = document.querySelector('.title')
+  titleSpan.textContent = $('.frTag').length ? 'Bonne Vente !' : 'Happy Selling!' 
+} else {
+  // 5. Set title
+  const titleSpan = document.querySelector('.title')
+  titleSpan.textContent = title
+
+  // 6. Set timer
+  const clock = $('.timer').FlipClock(diff, {
+    countdown: true,
+    clockFace: 'DailyCounter',
+    language: $('.frTag').length ? 'fr-ca' : 'en-us'
+  })
+}
